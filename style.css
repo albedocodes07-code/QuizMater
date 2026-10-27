@@ -1,0 +1,110 @@
+
+
+body {
+    margin: 80;
+    padding: 80;
+    background: url('background') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    height: 50vh;
+    position: relative;
+}
+
+.content {
+    transition: 0.6s;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    top: 50%;
+    transform: scale(1);
+    transition: transform 0.5s ease, background-color 0.5s ease-in-out;
+}
+
+.content:hover {
+ 
+    transform: scale(1.1);
+}
+
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#start-btn {
+    transition: background-color 0.3s font-size 26px;
+    cursor: pointer;
+
+    padding: 10px 20px;
+    font-size: 18px;
+     background-color: rgb(79, 79, 236);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: red;
+}
+
+
+#quiz-section {
+    max-width: 800px;
+    background-color: #fff4e6;
+    padding: 30px;
+    margin: 150px auto;
+    border-radius: 28px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.quiz-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    top: 20px;
+
+    left: 20px;
+
+    z-index: 1000;
+
+    background: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.quiz-logo::before {
+    content: "🎯";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover{
+     background-color: red;
+}

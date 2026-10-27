@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<title>QuizMaster – Test Your Knowledge!</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="interactive.png">
+   
+
+</head>
+
+<body>
+    <header>
+        <div class="quiz-logo">QuizMaster</div>
+    </header>
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Welcome to QuizMaster</h1>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+
+    <main id="quiz-section" style="display: none;">
+        <header>
+            <div class="quiz-logo">QuizMaster</div>
+        </header>
+
+     
+        <section class="question" data-question="1">
+            <h2>Q1: What does HTML stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q1" value="wrong"> Hyper Trainer Marking Language</label><br>
+                <label><input type="radio" name="q1" value="correct"> Hyper Text Markup Language</label><br>
+                <label><input type="radio" name="q1" value="wrong"> Hyper Text Marketing Language</label><br>
+                <label><input type="radio" name="q1" value="wrong"> High Tech Modern Language</label>
+            </div>
+            <button class="submit-btn">Submit it</button>
+            <div class="answer-feedback"></div>
+        </section>
+
+    
+        <section class="question" data-question="2" style="display:none;">
+            <h2>Q2: What does CSS stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q2" value="correct"> Cascading Style Sheets</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Computer Style Sheets</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Creative Style System</label><br>
+                <label><input type="radio" name="q2" value="wrong"> Colorful Style Sheets</label>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+
+    
+        <section class="question" data-question="3" style="display:none;">
+            <h2>Q3 What does JS stand for?</h2>
+            <div class="options">
+                <label><input type="radio" name="q3" value="correct"> Java script</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Java super</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Java supreme</label><br>
+                <label><input type="radio" name="q3" value="wrong"> Java server</label>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        <section class="question" data-question="4" style="display: none;">
+            <h2>Q4 What does the alt attribute do in an <img> tag?</h2>
+            <div class="options">
+                <label> <input type="radio" name="q4" value="wrong"> Specifies the image source</label><br>
+                <label> <input type="radio" name="q4" value="correct"> Provides alternative text if the image can’t
+                    load</label><br>
+                <label> <input type="radio" name="q4" value="wrong">Changes the image size</label><br>
+                <label> <input type="radio" name="q4" value="wrong">Adds a hyperlink to the image</label><br>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        <section class="question" data-question="5" style="display:none;">
+            <h2>Q5 Which property is used to change the background color of an element?</h2>
+            <div class="options">
+                <label><input type="radio" name="q5" value="wrong"> Color</label><br>
+                <label><input type="radio" name="q5" value="correct"> background-color</label><br>
+                <label><input type="radio" name="q5" value="wrong"> bj color</label><br>
+                <label><input type="radio" name="q5" value="wrong">Back color</label>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        <section class="question" data-question="6" style="display:none;">
+            <h2>Q6 How do you write a function in JavaScript?</h2>
+            <div class="options">
+                <label><input type="radio" name="q6" value="corre"> function myFunction() { }</label><br>
+                <label><input type="radio" name="q6" value="wrong"> def myFunction() { }</label><br>
+                <label><input type="radio" name="q6" value="wrong"> func myFunction() { }</label><br>
+                <label><input type="radio" name="q6" value="wrong">function:myFunction() { } </label>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        <section class="question" data-question="7" style="display:none;">
+            <h2>Q7 Which tag is used to create a hyperlink?</h2>
+            <div class="options">
+                <label><input type="radio" name="q7" value="wrong">link</label><br>
+                <label><input type="radio" name="q7" value="correct"> a</label><br>
+                <label><input type="radio" name="q7" value="wrong"> href</label><br>
+                <label><input type="radio" name="q7" value="wrong"> hyper link</label><br>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+
+        <section class="question" data-question="8" style="display:none;">
+            <h2>Q8 What does margin: 10px auto; do?</h2>
+            <div class="options">
+                <label><input type="radio" name="q8" value="correct">Sets top and bottom margin to 10px and centers
+                    horizontally</label><br>
+                <label><input type="radio" name="q8" value="wrong"> Sets all margins to 10px</label><br>
+                <label><input type="radio" name="q8" value="wrong">Sets margin only on the left side </label><br>
+                <label><input type="radio" name="q8" value="wrong">Sets margin only on the right side </label><br>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        <section class="question" data-question="9" style="display:none;">
+            <h2>Q9 How can you select an element with the ID “header” in JavaScript?</h2>
+            <div class="options">
+                <label><input type="radio" name="q9" value="wrong">document.getElementByClass("header")</label><br>
+                <label><input type="radio" name="q9" value="correct"> document.getElementById("header")</label><br>
+                <label><input type="radio" name="q9" value="wrong"> document.querySelector(".header")</label><br>
+                <label><input type="radio" name="q9" value="wrong"> document.getElementByIds("header")</label><br>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+        </section>
+        <section class="question" data-question="10" style="display:none;">
+            <h2>Q10 Which CSS property is used to make text bold?</h2>
+            <div class="options">
+                <label><input type="radio" name="q10" value="wrong">font-weight</label><br>
+                <label><input type="radio" name="q10" value="correct">text-bold </label><br>
+                <label><input type="radio" name="q10" value="wrong">font-style </label><br>
+                <label><input type="radio" name="q10" value="wrong"> text-weight</label><br>
+            </div>
+            <button class="submit-btn">Submit</button>
+            <div class="answer-feedback"></div>
+        </section>
+<div id="result-box" style="display: none; text-align: center; margin-top: 20px;"></div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
